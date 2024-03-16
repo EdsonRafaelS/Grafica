@@ -13,23 +13,96 @@
     --cor1 : #BF64A5;
     --cor2 : #38BDF2;
     --cor3 : #BAD94A;
-    --cor4 : #F2F2F2;
+    --cor4 : #e4e4e4dd;
     --marrom: #8B4513;
     --preto : #000000;
     --branco : #FFFFFF;
+    --sombra : #362619c2;
 
     --font-regular: "Merriweather Sans", serif;
     --font-principal: "Merriweather" , serif;
 }
 
-main{
-    background-image: url(../imagens/fundo-G.jpg);
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: var(--font-principal);
+    background-image: url("../imagens/fundo-G.jpg"); /* Imagem de fundo */
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed;     */
     background-position: center center;
 }
 
-header{
+body::after {
+    content: ""; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--sombra); /* Cor da sombra */
+    z-index: -1; /* Coloca a sombra atrás do conteúdo */
+}
 
+header{
+    position: sticky; /*Header fica fixo mesmo com a rolagem*/
+    top: 0; /*Necessario para que o header fique fixo*/
+    width: 100%;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    background-color: #FFFFFF;
+    justify-content: space-between; /*Posiciona os elemntos ao lado direito da tela*/
+}
+
+header picture{   
+    padding-left: 30vh;
+}
+
+.logo img {
+    width: 80px; /* Defina a largura desejada da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /*Posiciona os elementos da lista, um ao lado do outro*/
+}
+
+nav ul li{
+    margin-left: 10px;
+}
+
+nav ul li:first-child{ /*Primeiro elemento da lista*/
+    margin-left: 0px;
+}
+nav ul li:last-child{ /*ultimo elemento da lista*/
+    margin-right: 23vh;
+}
+
+nav ul li a{
+    color: var(--preto);
+    opacity: 60%;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.1s;
+    font-family: var(--font-regular);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: var(--preto);
+    opacity: 100%;
+}
+
+main{
+    position: ;
 }
