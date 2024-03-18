@@ -60,7 +60,9 @@ header {
     background-color: #FFFFFF;
     justify-content: space-between;
     /*Posiciona os elemntos ao lado direito da tela*/
+    z-index: 9999; /* Defina um valor alto para o z-index */
 }
+
 
 header picture {
     padding-left: 30vh;
@@ -112,96 +114,112 @@ nav ul li a:hover {
     opacity: 100%;
 }
 
-/* Responsividade MODELO: Tablet 1024x1279 */
-/* HEADER E NAV BAR */
-@media (max-width:1242px) {
-    body {
-        width: 100vh;
-        height: 100vh;
-    }
-
-    header {
-        width: 100vh;
-        height: 14vh;
-    }
-
-    header picture {
-        padding-left: 10vh;
-    }
-
-    .logo img {
-        width: 150px;
-    }
-
-    nav ul li a {
-        color: var(--preto);
-        opacity: 60%;
-        text-decoration: none;
-        padding: 5px;
-        transition: 0.1s;
-        font-family: var(--font-regular);
-        font-size: 2em;
-        font-weight: bold;
-    }
-
-    nav ul li:first-child {
-        /*Primeiro elemento da lista*/
-        margin-left: 0px;
-    }
-
-    nav ul li:last-child {
-        /*ultimo elemento da lista*/
-        margin-right: 5vh;
-    }
-
-    nav ul li {
-        padding: 3px;
-    }
+section.title{
+    width: 100vw;
+    height: 630px;
+    position: relative;
 }
 
-/* Reponsividade MODELO: Celular 480x767*/
-/* HEADER E NAV BAR */
-@media (max-width:767px) {
-    body {
-        width: 100vh;
-        height: 200vh;
-    }
+section article.conteudo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50px);
 
-    header {
-        width: 200vw;
-        height: 21vh;
-    }
+}
 
-    header picture {
-        padding-left: 10vh;
-    }
+section article.conteudo h1{
+    text-align: center;
+    color: var(--branco);
+    font-size: 4.0em;
+    font-family: var(--font-regular);
+}
 
-    .logo img {
-        width: 20vh;
-    }
+section article.conteudo p{
+    color: var(--cor4);
+    font-family: var(--font-regular);
+    font-size: 1.4em;
+    text-align: center;
+}
 
-    nav ul li a {
-        color: var(--preto);
-        opacity: 60%;
-        text-decoration: none;
-        padding: 5px;
-        transition: 0.1s;
-        font-family: var(--font-regular);
-        font-size: 2em;
-        font-weight: bold;
-    }
+section button.orçamento{
+    position: absolute;
 
-    nav ul li:first-child {
-        /*Primeiro elemento da lista*/
-        margin-left: 0px;
-    }
+    bottom: 80px; /* Defina a distância do botão em relação ao fundo */
+    left: 50%; /* Alinhe o botão horizontalmente no centro */
+    transform: translateX(-50%); /* Centralize horizontalmente */
+    width: 300px;
+    height: 100px;
+    background-color: var(--cor3);
+    color: var(--branco);
+    font-size: 1.2em;
+    border-radius: 40px;
+    border: 2px solid black;
+    transition: 0.5s;
+}
 
-    nav ul li:last-child {
-        /*ultimo elemento da lista*/
-        margin-right: 5vh;
-    }
+section button.orçamento:hover{
+    background-color: var(--sombra);
+    border: 2px solid var(--marrom); /*cor do botão orçamento*/
+    width: 300px;
+    height: 100px;
+}
 
-    nav ul li {
-        padding: 3px;
-    }
+
+
+section.introducao{
+    width: 100vw;
+    height: 570px;
+    position: relative;
+    background-color: var(--branco);
+
+}
+
+section.introducao article{
+
+    text-align: center;
+}
+
+section.introducao article.introd01{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 1.3em;
+    font-family: var(--font-regular);
+}
+
+section.introducao article.introd02{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+
+}
+
+section button.introducao{
+    position: absolute;
+
+    bottom: 80px; /* Defina a distância do botão em relação ao fundo */
+    left: 50%; /* Alinhe o botão horizontalmente no centro */
+    transform: translateX(-50%); /* Centralize horizontalmente */
+    width: 300px;
+    height: 100px;
+    background-color: var(--cor3);
+    color: var(--branco);
+    font-size: 1.2em;
+    border-radius: 40px;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+section button.introducao:hover{
+    background-color: var(--sombra);
+    border: 2px solid var(--marrom); /*cor do botão orçamento*/
+    width: 300px;
+    height: 100px;
 }
