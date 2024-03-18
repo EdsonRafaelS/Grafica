@@ -143,4 +143,45 @@ nav ul li a:hover{
     }
 }
 
-/*  */
+/* Reponsividade MODELO: Celular 480x767*/
+/* HEADER E NAV BAR */
+@media (max-width:767px){
+    body{
+        width: 100vh;
+        height: 100vh;
+    }
+
+    header{
+        width: 200vw;
+        height: 21vh;
+    }
+
+    header picture{   
+        padding-left: 10vh;
+    }
+
+    .logo img{
+        width: 20vh;
+    }
+
+    nav ul li a{
+        color: var(--preto);
+        opacity: 60%;
+        text-decoration: none;
+        padding: 5px;
+        transition: 0.1s;
+        font-family: var(--font-regular);
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    nav ul li:first-child{ /*Primeiro elemento da lista*/
+        margin-left: 0px;
+    }
+    nav ul li:last-child{ /*ultimo elemento da lista*/
+        margin-right: 5vh;
+    }
+    nav ul li{
+        padding: 3px;
+    }
+}
