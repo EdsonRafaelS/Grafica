@@ -33,7 +33,10 @@ body {
     /* Imagem de fundo */
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 100px;
     background-position: center center;
+
+    overflow-x: hidden; /* Adicionando overflow-x: hidden para ocultar a rolagem lateral */
 }
 
 body::after {
@@ -41,8 +44,8 @@ body::after {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: var(--sombra);
     background-attachment: fixed;
     /* Cor da sombra */
@@ -51,18 +54,16 @@ body::after {
 }
 
 header {
-    position: sticky;
-    /*Header fica fixo mesmo com a rolagem*/
+    height: 80px;
+    position: fixed;
     top: 0;
-    /*Necessario para que o header fique fixo*/
     width: 100%;
     display: flex;
     padding: 10px 20px;
     align-items: center;
     background-color: #FFFFFF;
     justify-content: space-between;
-    /*Posiciona os elemntos ao lado direito da tela*/
-    z-index: 9999; /* Defina um valor alto para o z-index */
+    z-index: 9999; /* Aumenta o z-index para garantir que o cabeçalho esteja na parte superior */
 }
 
 
@@ -124,7 +125,7 @@ section.title{
 
 section article.conteudo{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50% ,-50px);
 
@@ -148,6 +149,7 @@ section button.orçamento{
     position: absolute;
 
     bottom: 80px; /* Defina a distância do botão em relação ao fundo */
+    top: 60%;
     left: 50%; /* Alinhe o botão horizontalmente no centro */
     transform: translateX(-50%); /* Centralize horizontalmente */
     width: 230px;
@@ -230,10 +232,4 @@ section button.introducao:hover{
     width: 230px;
     height: 60px;
     border-radius: 50px;
-}
-
-section.Principais_servicos{
-    width: 100vw;
-    height: 500px;
-    background-color: var(--);
 }
