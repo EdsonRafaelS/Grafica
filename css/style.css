@@ -13,8 +13,9 @@
     --cor1: #BF64A5;
     --cor2: #38BDF2;
     --cor3: #BAD94A;
+    --cor3-1: #6c8418;
     --cor4: #e4e4e4dd;
-    --marrom: #8B4513;
+    --marrom: #110603;
     --preto: #000000;
     --branco: #FFFFFF;
     --sombra: #362619c2;
@@ -43,6 +44,7 @@ body::after {
     width: 100%;
     height: 100%;
     background: var(--sombra);
+    background-attachment: fixed;
     /* Cor da sombra */
     z-index: -1;
     /* Coloca a sombra atrás do conteúdo */
@@ -148,21 +150,24 @@ section button.orçamento{
     bottom: 80px; /* Defina a distância do botão em relação ao fundo */
     left: 50%; /* Alinhe o botão horizontalmente no centro */
     transform: translateX(-50%); /* Centralize horizontalmente */
-    width: 300px;
-    height: 100px;
+    width: 230px;
+    height: 60px;
+    border-radius: 50px;
     background-color: var(--cor3);
-    color: var(--branco);
-    font-size: 1.2em;
-    border-radius: 40px;
-    border: 2px solid black;
-    transition: 0.5s;
+    color: var(--marrom);
+    text-transform: uppercase;
+    font-size: 0.9em; 
+    transition: 0.2s;
+
+    /* Novas propriedades para remover o sombreamento */
+    border: none;
 }
 
 section button.orçamento:hover{
-    background-color: var(--sombra);
-    border: 2px solid var(--marrom); /*cor do botão orçamento*/
-    width: 300px;
-    height: 100px;
+    background-color: var(--cor3-1  );
+    width: 230px;
+    height: 60px;
+    border-radius: 50px;
 }
 
 
@@ -171,12 +176,11 @@ section.introducao{
     width: 100vw;
     height: 570px;
     position: relative;
-    background-color: var(--branco);
+    background-color: var(--marrom);
 
 }
 
 section.introducao article{
-
     text-align: center;
 }
 
@@ -189,6 +193,7 @@ section.introducao article.introd01{
 
     font-size: 1.3em;
     font-family: var(--font-regular);
+    color: var(--branco);
 }
 
 section.introducao article.introd02{
@@ -198,7 +203,7 @@ section.introducao article.introd02{
 
     transform: translate(-50%, -50%);
     font-size: 1.2em;
-
+    color: var(--cor4);
 }
 
 section button.introducao{
@@ -207,19 +212,28 @@ section button.introducao{
     bottom: 80px; /* Defina a distância do botão em relação ao fundo */
     left: 50%; /* Alinhe o botão horizontalmente no centro */
     transform: translateX(-50%); /* Centralize horizontalmente */
-    width: 300px;
-    height: 100px;
+    width: 230px;
+    height: 60px;
+    border-radius: 50px;
     background-color: var(--cor3);
-    color: var(--branco);
-    font-size: 1.2em;
-    border-radius: 40px;
-    border: 2px solid black;
-    transition: 0.5s;
+    color: var(--marrom);
+    text-transform: uppercase;
+    font-size: 0.9em; 
+    transition: 0.2s;
+
+    /* Novas propriedades para remover o sombreamento */
+    border: none;
 }
 
 section button.introducao:hover{
-    background-color: var(--sombra);
-    border: 2px solid var(--marrom); /*cor do botão orçamento*/
-    width: 300px;
-    height: 100px;
+    background-color: var(--cor3-1  );
+    width: 230px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+section.Principais_servicos{
+    width: 100vw;
+    height: 500px;
+    background-color: var(--);
 }
