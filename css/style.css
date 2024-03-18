@@ -9,18 +9,18 @@
 }
 
 
-:root{
-    --cor1 : #BF64A5;
-    --cor2 : #38BDF2;
-    --cor3 : #BAD94A;
-    --cor4 : #e4e4e4dd;
+:root {
+    --cor1: #BF64A5;
+    --cor2: #38BDF2;
+    --cor3: #BAD94A;
+    --cor4: #e4e4e4dd;
     --marrom: #8B4513;
-    --preto : #000000;
-    --branco : #FFFFFF;
-    --sombra : #362619c2;
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --sombra: #362619c2;
 
     --font-regular: "Merriweather Sans", serif;
-    --font-principal: "Merriweather" , serif;
+    --font-principal: "Merriweather", serif;
 }
 
 body {
@@ -28,63 +28,75 @@ body {
     height: 100vh;
     position: relative;
     font-family: var(--font-principal);
-    background-image: url("../imagens/fundo-G.jpg"); /* Imagem de fundo */
+    background-image: url("../imagens/fundo-G.jpg");
+    /* Imagem de fundo */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 body::after {
-    content: ""; 
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--sombra); /* Cor da sombra */
-    z-index: -1; /* Coloca a sombra atrás do conteúdo */
+    background: var(--sombra);
+    /* Cor da sombra */
+    z-index: -1;
+    /* Coloca a sombra atrás do conteúdo */
 }
 
-header{
-    position: sticky; /*Header fica fixo mesmo com a rolagem*/
-    top: 0; /*Necessario para que o header fique fixo*/
+header {
+    position: sticky;
+    /*Header fica fixo mesmo com a rolagem*/
+    top: 0;
+    /*Necessario para que o header fique fixo*/
     width: 100%;
     display: flex;
     padding: 10px 20px;
     align-items: center;
     background-color: #FFFFFF;
-    justify-content: space-between; /*Posiciona os elemntos ao lado direito da tela*/
+    justify-content: space-between;
+    /*Posiciona os elemntos ao lado direito da tela*/
 }
 
-header picture{   
+header picture {
     padding-left: 30vh;
 }
 
 .logo img {
-    width: 80px; /* Defina a largura desejada da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 80px;
+    /* Defina a largura desejada da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
 }
 
 
-nav ul{
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /*Posiciona os elementos da lista, um ao lado do outro*/
+    display: flex;
+    /*Posiciona os elementos da lista, um ao lado do outro*/
 }
 
-nav ul li{
+nav ul li {
     margin-left: 10px;
 }
 
-nav ul li:first-child{ /*Primeiro elemento da lista*/
+nav ul li:first-child {
+    /*Primeiro elemento da lista*/
     margin-left: 0px;
 }
-nav ul li:last-child{ /*ultimo elemento da lista*/
+
+nav ul li:last-child {
+    /*ultimo elemento da lista*/
     margin-right: 23vh;
 }
 
-nav ul li a{
+nav ul li a {
     color: var(--preto);
     opacity: 60%;
     text-decoration: none;
@@ -95,33 +107,33 @@ nav ul li a{
     font-weight: bold;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: var(--preto);
     opacity: 100%;
 }
 
 /* Responsividade MODELO: Tablet 1024x1279 */
 /* HEADER E NAV BAR */
-@media (max-width:1242px){
-    body{
+@media (max-width:1242px) {
+    body {
         width: 100vh;
         height: 100vh;
     }
 
-    header{
+    header {
         width: 100vh;
         height: 14vh;
     }
 
-    header picture{   
+    header picture {
         padding-left: 10vh;
     }
 
-    .logo img{
+    .logo img {
         width: 150px;
     }
 
-    nav ul li a{
+    nav ul li a {
         color: var(--preto);
         opacity: 60%;
         text-decoration: none;
@@ -132,39 +144,43 @@ nav ul li a:hover{
         font-weight: bold;
     }
 
-    nav ul li:first-child{ /*Primeiro elemento da lista*/
+    nav ul li:first-child {
+        /*Primeiro elemento da lista*/
         margin-left: 0px;
     }
-    nav ul li:last-child{ /*ultimo elemento da lista*/
+
+    nav ul li:last-child {
+        /*ultimo elemento da lista*/
         margin-right: 5vh;
     }
-    nav ul li{
+
+    nav ul li {
         padding: 3px;
     }
 }
 
 /* Reponsividade MODELO: Celular 480x767*/
 /* HEADER E NAV BAR */
-@media (max-width:767px){
-    body{
+@media (max-width:767px) {
+    body {
         width: 100vh;
-        height: 100vh;
+        height: 200vh;
     }
 
-    header{
+    header {
         width: 200vw;
         height: 21vh;
     }
 
-    header picture{   
+    header picture {
         padding-left: 10vh;
     }
 
-    .logo img{
+    .logo img {
         width: 20vh;
     }
 
-    nav ul li a{
+    nav ul li a {
         color: var(--preto);
         opacity: 60%;
         text-decoration: none;
@@ -175,13 +191,99 @@ nav ul li a:hover{
         font-weight: bold;
     }
 
-    nav ul li:first-child{ /*Primeiro elemento da lista*/
+    nav ul li:first-child {
+        /*Primeiro elemento da lista*/
         margin-left: 0px;
     }
-    nav ul li:last-child{ /*ultimo elemento da lista*/
+
+    nav ul li:last-child {
+        /*ultimo elemento da lista*/
         margin-right: 5vh;
     }
-    nav ul li{
+
+    nav ul li {
         padding: 3px;
     }
+}
+
+/* Reponsividade MODELO: Celular 480x767*/
+/* HEADER E NAV BAR */
+@media (max-width:3200px) {
+    body {
+        width: 100vw;
+        height: 200vh;
+    }
+
+    header {
+        width: 200vw;
+        height: 22vh;
+    }
+
+    header picture {
+        padding-left: 10vh;
+    }
+
+    .logo img {
+        width: 17vh;
+    }
+
+    nav ul li a {
+        color: var(--preto);
+        opacity: 60%;
+        text-decoration: none;
+        padding: 50px;
+        margin: 100px;
+        transition: 0.1s;
+        font-family: var(--font-regular);
+        font-size: 7em;
+        font-weight: bold;
+    }
+
+    nav ul li:first-child {
+        /*Primeiro elemento da lista*/
+        margin-left: 1px;
+    }
+
+    nav ul li:last-child {
+        /*ultimo elemento da lista*/
+        margin-right: -5vh;
+    }
+
+    nav ul li {
+        padding: 1px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        /* Permite que os itens da lista quebrem para a próxima linha */
+    }
+
+    nav ul li {
+        width: 40%;
+        /* Define a largura para ocupar metade do espaço disponível */
+        box-sizing: border-box;
+        /* Inclui a largura e o padding na largura total */
+        padding: 5px;
+        /* Adiciona espaço interno aos itens da lista */
+    }
+
+    nav ul li a {
+        color: var(--preto);
+        opacity: 60%;
+        text-decoration: none;
+        transition: 0.1s;
+        font-family: var(--font-regular);
+        font-size: 7em;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        opacity: 100%;
+    }
+
+    
 }
