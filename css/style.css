@@ -233,3 +233,71 @@ section button.introducao:hover{
     height: 60px;
     border-radius: 50px;
 }
+
+section.principais_servicos{
+    width: 100vw;
+    height: 600px;
+    background-color: var(--branco);
+    position: relative;
+}
+
+section.principais_servicos article h2{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    
+    font-size: 3em;
+    font-family: var(--font-regular);
+    text-align: center;
+    color: var(--marrom);
+}
+section.principais_servicos article h3{
+    font-size: 1.6em;
+    font-family: var(--font-regular);
+}
+
+section.principais_servicos article p{
+    font-size: 1.1em;
+    font-family: var(--font-regular);
+    text-align: center;
+}
+
+section.principais_servicos article img{
+    width: 80px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+section.principais_servicos article.Sublimacao{
+    position: absolute;
+    top: 55%;
+    left: 15%;
+
+    transform: translate(-50%, -50%);
+}
+
+section.principais_servicos article.Personalizacao{
+    position: absolute;
+    top: 55%;
+    left: 35%;
+
+    transform: translate(-50%, -50%);
+}
+
+section.principais_servicos article.Artes{
+    position: absolute;
+    top: 55%;
+    left: 60%;
+
+    transform: translate(-50%, -50%);
+}
+
+section.principais_servicos article.Designers{
+    position: absolute;
+    top: 55%;
+    left: 85%;
+
+    transform: translate(-50%, -50%);
+}
