@@ -54,14 +54,15 @@ body::after {
 }
 
 header {
-    height: 80px;
+    height: 90px;
     position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     padding: 10px 20px;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: var(--branco);
+    box-shadow: 1px 1px 10px black;
     justify-content: space-between;
     z-index: 9999; /* Aumenta o z-index para garantir que o cabeçalho esteja na parte superior */
 }
@@ -300,4 +301,145 @@ section.principais_servicos article.Designers{
     left: 85%;
 
     transform: translate(-50%, -50%);
+}
+
+section.Servicos article {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 400px;
+    background-color: var(--marrom);
+    color: var(--branco);
+    font-family: var(--font-regular);
+}
+
+section.Servicos article .servicos-lista {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    list-style-type: '\2660\0020\0020\0020';
+    padding: 0;
+    margin: 0;
+    column-count: 2; /* Dividindo em duas colunas */
+    column-gap: 20px; /* Espaço entre as colunas (opcional) */
+
+    font-size: 1.3em;
+}
+
+
+/* Aplicando a largura a cada lista */
+section.Servicos article .servicos-lista {
+    width: 45%;
+}
+
+section.Contato{
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+section.Contato article h2{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-regular);
+    font-size: 2.5em;
+}
+
+section.Contato article p#orçamento{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4em;
+}
+
+section.Contato article.Telefones{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+section.Contato article.Telefones button{
+    width: 200px;
+    height: 40px;
+    margin: 20px;
+}
+
+section.Contato article.Telefones button.tel1{
+    width: 230px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: var(--cor3);
+    color: var(--marrom);
+    text-transform: uppercase;
+    font-size: 0.9em; 
+    transition: 0.2s;
+
+    /* Novas propriedades para remover o sombreamento */
+    border: none;
+}   
+
+section.Contato article.Telefones button.tel2{
+    width: 230px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: var(--cor3);
+    color: var(--marrom);
+    text-transform: uppercase;
+    font-size: 0.9em; 
+    transition: 0.2s;
+
+    /* Novas propriedades para remover o sombreamento */
+    border: none;
+}
+section.Contato article.Telefones button.tel1:hover{
+    background-color: var(--cor3-1  );
+    width: 230px;
+    height: 60px;
+    border-radius: 50px;
+}   
+
+section.Contato article.Telefones button.tel2:hover{
+    background-color: var(--cor3-1  );
+    width: 230px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+section.Contato article.Telefones button i {
+    font-size: 1.2em; /* Ajusta o tamanho do ícone (aumentado para 1.5 vezes o tamanho padrão) */
+    margin-right: 10px; /* Adiciona um espaço entre o ícone e o texto */
+}
+
+footer{
+    position: relative;
+    width: 100vw;
+    height: 40px;
+    font-family: var(--font-regular);
+    background-color: var(--marrom);
+    color: var(--branco);
+}
+
+footer p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer p a{
+    color: var(--cor4);
+    text-decoration: none;
+}
+
+footer p a:hover{
+    color: var(--branco);
 }

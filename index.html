@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <!-- Inclua o link para a biblioteca de ícones (Font Awesome) no head do seu documento HTML -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Gráfica Arte e Cia</title>
 </head>
@@ -18,14 +20,14 @@
         <nav>
             <ul class="column-list">
                 <li><a href="#Sobre">Sobre</a></li>
-                <li><a href="#Serviços">Serviços</a></li>
                 <li><a href="#Informações">Informações</a></li>
+                <li><a href="#Serviços">Serviços</a></li>
                 <li><a href="#Contato">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="title" id="Sobre">
+        <section class="title"  id="Sobre">
             <article class="conteudo">
                 <h1>Arte Gráfica e Cia</h1>
                 <p>
@@ -37,7 +39,7 @@
             </button>
         </section>
         
-        <section class="introducao">
+        <section class="introducao" id="Informações">
             <article class="introd01">
                 <h2>
                     Temos à disposição todos os recursos necessários para atender às suas demandas com a máxima eficiência e profissionalismo.
@@ -53,7 +55,7 @@
             </button>
         </section>
 
-        <section class="principais_servicos">
+        <section class="principais_servicos" id="Serviços">
             <article>
                 <h2>
                     Nossos Serviços
@@ -124,27 +126,29 @@
         </section>
         
 
-        <section>
+        <section id="Contato" class="Contato">
             <article>
                 <h2>
                     Contato
-                </h>
-                <p>
+                </h2>
+                <p id="orçamento">
                     Faça seu orçamento sem compromisso
                 </p>
             </article>
-            <article>
-                <img src="imagens/oi.png" alt="Imagem">
-                <p>(89) 1111-1111</p>
-                <img src="imagens/oi.png" alt="Imagem">
-                <p>(89) 1111-1111</p>
+            
+            <article class="Telefones">
+                <button class="tel1" onclick="enviarWhatsApp1()"><i class="fab fa-whatsapp"></i>
+                    <p>WhatsApp 1</p>
+                </button>
+                <button class="tel2" onclick="enviarWhatsApp2()"><i class="fab fa-whatsapp"></i>
+                    <p>WhatsApp 2</p>
+                </button>
             </article>
         </section>
 
     </main>
     <footer>
-        <p>&copy; 2024 - Artes Gráficas e Cia</p>
-        <p>Desenvolvedor - Edson Rafael - Maycon Gabriel</p>
+        <p>Desenvolvedor - <a href="https://www.instagram.com/eds.rafaell/" target="_blank" rel="nofollow">Edson Rafael</a> - <a href="https://www.instagram.com/maykin.54/" target="_blank" rel="nofollow">Maycon Gabriel</a></p>
     </footer>
 
     <script src="js/script.js"></script>
