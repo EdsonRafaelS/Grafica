@@ -372,14 +372,12 @@ section.Carrossel-container article.imagens img {
     height: auto; /* Defina a altura desejada */
     object-fit: cover; /* Isso garante que a imagem seja redimensionada para preencher o espaço enquanto mantém a proporção */
     margin: 10px; /* Adicione margem entre as imagens, se desejar */
-}
-
-section.Carrossel-container article.imagens img.imagem-menor {
-    width: 660px; /* Defina a largura desejada */
-    height: auto; /* Defina a altura desejada */
+    width: auto; /* Defina a largura desejada */
+    height: 700px; /* Defina a altura desejada */
     object-fit: cover; /* Isso garante que a imagem seja redimensionada para preencher o espaço enquanto mantém a proporção */
     margin: 10px; /* Adicione margem entre as imagens, se desejar */
 }
+
 
 section.Carrossel-container button{
     position: absolute;
@@ -425,7 +423,10 @@ section.Contato article p#orçamento{
     font-size: 1.4em;
 }
 
-section.Contato article.Telefones{
+section.Contato article.Telefones {
+    display: flex; /* Adiciona um layout flexível para os botões */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    align-items: center; /* Centraliza os botões verticalmente */
     position: absolute;
     left: 50%;
     top: 70%;
@@ -438,7 +439,7 @@ section.Contato article.Telefones button{
     margin: 20px;
 }
 
-section.Contato article.Telefones button.tel1{
+section.Contato article.Telefones button{
     width: 230px;
     height: 60px;
     border-radius: 50px;
@@ -452,32 +453,13 @@ section.Contato article.Telefones button.tel1{
     border: none;
 }   
 
-section.Contato article.Telefones button.tel2{
-    width: 230px;
-    height: 60px;
-    border-radius: 50px;
-    background-color: var(--cor3);
-    color: var(--marrom);
-    text-transform: uppercase;
-    font-size: 0.9em; 
-    transition: 0.2s;
-
-    /* Novas propriedades para remover o sombreamento */
-    border: none;
-}
-section.Contato article.Telefones button.tel1:hover{
+section.Contato article.Telefones button:hover{
     background-color: var(--cor3-1  );
     width: 230px;
     height: 60px;
     border-radius: 50px;
 }   
 
-section.Contato article.Telefones button.tel2:hover{
-    background-color: var(--cor3-1  );
-    width: 230px;
-    height: 60px;
-    border-radius: 50px;
-}
 
 section.Contato article.Telefones button i {
     font-size: 1.2em; /* Ajusta o tamanho do ícone (aumentado para 1.5 vezes o tamanho padrão) */

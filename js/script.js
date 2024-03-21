@@ -24,6 +24,18 @@ function enviarWhatsApp2() {
     window.open(url);
 }
 
+function enviarWhatsApp3() {
+  var numeroTelefone = '558994252717'; // Substitua pelo número de telefone desejado
+  var url = 'https://wa.me/' + numeroTelefone;
+  window.open(url);
+}
+
+function enviarWhatsApp4() {
+  var numeroTelefone = '5589994675682'; // Substitua pelo número de telefone desejado
+  var url = 'https://wa.me/' + numeroTelefone;
+  window.open(url);
+}
+
 function rolarParaContato() {
     var contatoSection = document.getElementById("Contato");
     contatoSection.scrollIntoView({ behavior: "smooth" });
