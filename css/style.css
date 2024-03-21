@@ -335,6 +335,71 @@ section.Servicos article .servicos-lista {
     width: 45%;
 }
 
+section.Carrossel-container{
+    position: relative;
+    width: 100vw;
+    height: 850px;
+    overflow: hidden;
+}
+
+section.Carrossel-container h1{
+    position: absolute;
+    font-family: var(--font-regular);
+    font-size: 2.5em;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--branco);
+}
+
+section.Carrossel-container article.imagens{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+section.Carrossel-container article.imagens img{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    object-fit: cover; /* Isso garante que a imagem seja redimensionada para preencher o espaço enquanto mantém a proporção */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.Carrossel-container article.imagens img {
+    width: 900px; /* Defina a largura desejada */
+    height: auto; /* Defina a altura desejada */
+    object-fit: cover; /* Isso garante que a imagem seja redimensionada para preencher o espaço enquanto mantém a proporção */
+    margin: 10px; /* Adicione margem entre as imagens, se desejar */
+}
+
+section.Carrossel-container article.imagens img.imagem-menor {
+    width: 660px; /* Defina a largura desejada */
+    height: auto; /* Defina a altura desejada */
+    object-fit: cover; /* Isso garante que a imagem seja redimensionada para preencher o espaço enquanto mantém a proporção */
+    margin: 10px; /* Adicione margem entre as imagens, se desejar */
+}
+
+section.Carrossel-container button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+}
+
+section.Carrossel-container button.prev {
+    left: 0;
+    margin-left: 30px;
+}
+  
+  section.Carrossel-container button.next {
+    right: 10px;
+    margin-right: 30px;
+}
+
 section.Contato{
     position: relative;
     width: 100vw;
