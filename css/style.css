@@ -495,7 +495,7 @@ footer p a:hover{
 
 
 /* MEDIA QUERY : Responsividade */
-@media (max-width: 493px) and (max-height: 787px) { /*IPHONE 12 PRO*/
+@media (max-width: 507px) and (max-height: 788px) { /*IPHONE 12 PRO*/ 
     header{
         width: 100vw;
         height: 100px;
