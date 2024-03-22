@@ -531,10 +531,26 @@ footer p a:hover{
         font-size: 1.2em;
         text-align: justify;
         top: 110%;
+        hyphens: auto;
     }
 
     section button.orçamento{
         top: 70%;
+    }
+
+    section.introducao{
+        height: 850px;
+    }
+
+    section.introducao article.introd01{
+        font-size: 1.4em;
+    }
+
+    section.introducao article.introd02{
+        font-size: 1.3em;
+        text-align: justify;
+        hyphens: auto;
+        top: 68%;
     }
 
 
