@@ -498,7 +498,7 @@ footer p a:hover{
     }
 
     header {
-        height: 70px;
+        height: 90px;
         padding: 10px;
     }
 
@@ -515,19 +515,20 @@ footer p a:hover{
     }
 
     section.title {
-        height: 500px;
+        height: 700px;
     }
 
     section article.conteudo {
-        top: 30%;
+        top: 20%;
     }
 
     section button.orçamento {
+        top: 70%;
         bottom: 60px;
     }
 
     section.introducao {
-        height: 450px;
+        height: 700px;
     }
 
     section.introducao article.introd01 {
@@ -535,7 +536,7 @@ footer p a:hover{
     }
 
     section.introducao article.introd02 {
-        top: 45%;
+        top: 65%;
     }
 
     section button.introducao {
