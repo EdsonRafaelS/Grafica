@@ -491,10 +491,140 @@ footer p a:hover{
     color: var(--branco);
 }
 
-/* Media Query para telas menores que 761px */
-@media screen and (max-width: 761px) {
+/* Para telas de até 762px */
+@media screen and (max-width: 762px) {
     body {
         margin-top: 50px; /* Reduzindo a margem superior */
+    }
+
+    header {
+        height: 70px;
+        padding: 10px;
+    }
+
+    header picture {
+        padding-left: 20px;
+    }
+
+    nav ul li {
+        margin-left: 5px;
+    }
+
+    nav ul li:last-child {
+        margin-right: 10px;
+    }
+
+    section.title {
+        height: 500px;
+    }
+
+    section article.conteudo {
+        top: 30%;
+    }
+
+    section button.orçamento {
+        bottom: 60px;
+    }
+
+    section.introducao {
+        height: 450px;
+    }
+
+    section.introducao article.introd01 {
+        top: 25%;
+    }
+
+    section.introducao article.introd02 {
+        top: 45%;
+    }
+
+    section button.introducao {
+        bottom: 60px;
+    }
+
+    section.principais_servicos {
+        height: auto;
+    }
+
+    section.principais_servicos article h2 {
+        top: 15%;
+        font-size: 2.5em;
+    }
+
+    section.principais_servicos article.Sublimacao {
+        top: 40%;
+        left: 10%;
+    }
+
+    section.principais_servicos article.Personalizacao {
+        top: 40%;
+        left: 45%;
+    }
+
+    section.principais_servicos article.Artes {
+        top: 60%;
+        left: 10%;
+    }
+
+    section.principais_servicos article.Designers {
+        top: 60%;
+        left: 45%;
+    }
+
+    section.Servicos {
+        height: auto;
+    }
+
+    section.Servicos article {
+        height: auto;
+    }
+
+    section.Servicos article .servicos-lista {
+        column-count: 1;
+    }
+
+    section.Carrossel-container {
+        height: auto;
+    }
+
+    section.Carrossel-container h1 {
+        top: 5%;
+        font-size: 2em;
+    }
+
+    section.Carrossel-container article.imagens img {
+        width: 100%;
+        height: auto;
+    }
+
+    section.Carrossel-container button.prev,
+    section.Carrossel-container button.next {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    section.Contato {
+        height: auto;
+    }
+
+    section.Contato article h2,
+    section.Contato article p#orçamento {
+        top: 20%;
+        font-size: 1.8em;
+    }
+
+    section.Contato article.Telefones {
+        top: 45%;
+    }
+
+    section.Contato article.Telefones button {
+        width: 180px;
+        height: 50px;
+        font-size: 0.8em;
+    }
+
+    footer {
+        height: 30px;
     }
 }
 
