@@ -492,13 +492,15 @@ footer p a:hover{
 }
 
 /* Para telas de até 762px */
+/* Para telas de até 762px */
 @media screen and (max-width: 762px) {
     body {
-        margin-top: 50px; /* Reduzindo a margem superior */
+        margin-top: 0;
+        overflow-x: hidden;
     }
 
     header {
-        height: 90px;
+        height: 15%;
         padding: 10px;
     }
 
@@ -515,61 +517,53 @@ footer p a:hover{
     }
 
     section.title {
-        height: 700px;
+        height: 50vh; /* Aumentando a altura da seção */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     section article.conteudo {
-        top: 20%;
+        margin-top: 10%; /* Espaço superior */
+        margin-bottom: 10%; /* Espaço inferior */
     }
 
     section button.orçamento {
-        top: 70%;
-        bottom: 60px;
+        bottom: 5%;
     }
 
     section.introducao {
-        height: 700px;
+        height: 40vh; /* Aumentando a altura da seção */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    section.introducao article.introd01 {
-        top: 25%;
-    }
-
+    section.introducao article.introd01,
     section.introducao article.introd02 {
-        top: 65%;
+        margin-top: 10%; /* Espaço superior */
+        margin-bottom: 10%; /* Espaço inferior */
     }
 
     section button.introducao {
-        bottom: 60px;
+        bottom: 5%;
     }
 
     section.principais_servicos {
-        height: auto;
+        height: 100vh; /* Aumentando a altura da seção */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     section.principais_servicos article h2 {
-        top: 15%;
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
-    section.principais_servicos article.Sublimacao {
-        top: 40%;
-        left: 10%;
-    }
-
-    section.principais_servicos article.Personalizacao {
-        top: 40%;
-        left: 45%;
-    }
-
-    section.principais_servicos article.Artes {
-        top: 60%;
-        left: 10%;
-    }
-
-    section.principais_servicos article.Designers {
-        top: 60%;
-        left: 45%;
+    section.principais_servicos article {
+        width: 45%;
+        float: left;
+        margin: 2.5%;
     }
 
     section.Servicos {
@@ -585,12 +579,14 @@ footer p a:hover{
     }
 
     section.Carrossel-container {
-        height: auto;
+        height: 70vh; /* Aumentando a altura da seção */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     section.Carrossel-container h1 {
-        top: 5%;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     section.Carrossel-container article.imagens img {
@@ -600,32 +596,37 @@ footer p a:hover{
 
     section.Carrossel-container button.prev,
     section.Carrossel-container button.next {
-        padding: 10px;
-        font-size: 1em;
+        padding: 5px;
+        font-size: 0.8em;
     }
 
     section.Contato {
-        height: auto;
+        height: 50vh; /* Aumentando a altura da seção */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     section.Contato article h2,
     section.Contato article p#orçamento {
-        top: 20%;
-        font-size: 1.8em;
+        font-size: 1.5em;
+        margin-top: 10%; /* Espaço superior */
+        margin-bottom: 10%; /* Espaço inferior */
     }
 
     section.Contato article.Telefones {
-        top: 45%;
+        margin-top: 5%; /* Espaço superior */
     }
 
     section.Contato article.Telefones button {
-        width: 180px;
-        height: 50px;
-        font-size: 0.8em;
+        width: 150px;
+        height: 40px;
+        font-size: 0.7em;
     }
 
     footer {
-        height: 30px;
+        height: 10%;
+        font-size: 0.8em;
     }
 }
 
