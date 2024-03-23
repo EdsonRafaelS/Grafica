@@ -491,7 +491,7 @@ footer p a:hover{
     color: var(--branco);
 }
 
-@media (max-width: 761px){
+@media (max-width: 71px){
     body{
         max-width: 100vw;
         max-height: 100vh;
