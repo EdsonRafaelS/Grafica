@@ -491,55 +491,7 @@ footer p a:hover{
     color: var(--branco);
 }
 
-@media (max-width: 761px){
-    body{
-        max-width: 100vw;
-        max-height: 100vh;
-    }
-
-    body::after{
-        max-width: 100vw;
-        max-height: 100vh;
-    }
-
-    header{
-        height: 110px;
-        padding: 0px;
-        margin: 0px;
-    }
-
-    header picture {
-        padding-left: 4vh;
-    }
-
-    nav ul li a{
-        font-size: 1em;
-    }
-
-    section.title{
-        height: 700px;
-    }
-
-    section article.conteudo{
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50% ,-50px);
-    }
-
-    section article.conteudo h1{
-        font-size: 3.5em;
-    }
-
-    section article.conteudo p{ 
-        margin-top: 30px;
-        font-size: 1.4em;
-        text-align: justify;
-        text-justify: inter-word;
-        hyphens: auto;
-    }
-
-    section button.orçamento{
-        top: 80%;
-    }
+@media screen and (max-width: 761px) {
+    margin-top: 50px; /* Reduzindo a margem superior */
 }
+
