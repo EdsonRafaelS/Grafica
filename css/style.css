@@ -490,3 +490,23 @@ footer p a{
 footer p a:hover{
     color: var(--branco);
 }
+
+@media (max-width: 761px){
+    body{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    header{
+        height: 110px;
+        padding: 0px;
+        margin: 0px;
+    }
+    header picture {
+        padding-left: 4vh;
+    }
+
+    nav ul li a{
+        font-size: 1;
+    }
+}
