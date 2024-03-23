@@ -491,7 +491,10 @@ footer p a:hover{
     color: var(--branco);
 }
 
+/* Media Query para telas menores que 761px */
 @media screen and (max-width: 761px) {
-    margin-top: 50px; /* Reduzindo a margem superior */
+    body {
+        margin-top: 50px; /* Reduzindo a margem superior */
+    }
 }
 
