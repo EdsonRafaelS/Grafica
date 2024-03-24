@@ -708,7 +708,7 @@ footer p a:hover{
 
     section.Carrossel-container {
         position: relative;
-        width: 370px;
+        width: 100vw;
         height: 650px;
         overflow: hidden;
     }
