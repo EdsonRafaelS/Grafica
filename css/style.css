@@ -539,27 +539,11 @@ footer p a:hover{
 
     section article.conteudo p{
         font-size: 1.3em;
-        margin-left: 40px;
-        text-align: justify;
-        margin-right: 40px;
-        margin-top: 30px;
     }
 
     section.introducao{
         height: 700px;
     }
 
-    section.introducao article{
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-    section.principais_servicos{
-        height: 1000px;
-    }
-
-    footer{
-        width: 98vw;
-    }
 
 }
