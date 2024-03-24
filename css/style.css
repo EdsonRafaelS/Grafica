@@ -553,6 +553,15 @@ footer p a:hover{
         transform: translate(-50%, -50%);
     }
 
+    section.principais_servicos article h2{
+        font-size: 34px;
+        white-space: nowrap;
+    }
+
+    div.Principais_servicos article{
+        display: block;
+    }
+
     .column-list{
         display: none;
     }
