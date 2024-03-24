@@ -554,7 +554,7 @@ footer p a:hover{
     }
 
     section.principais_servicos{
-        height: 1500px;
+        height: 1000px;
     }
 
     section.principais_servicos h3{
@@ -575,7 +575,7 @@ footer p a:hover{
     
     section.principais_servicos article.Sublimacao{
         position: absolute;
-        top: 13%;
+        top: 200px;
         left: 50%;
     
         transform: translate(-50%, -50%);
@@ -583,7 +583,7 @@ footer p a:hover{
     
     section.principais_servicos article.Personalizacao{
         position: absolute;
-        top: 30%;
+        top: 420px;
         left: 50%;
     
         transform: translate(-50%, -50%);
@@ -591,7 +591,7 @@ footer p a:hover{
     
     section.principais_servicos article.Artes{
         position: absolute;
-        top: 47%;
+        top: 640px;
         left: 50%;
     
         transform: translate(-50%, -50%);
@@ -599,7 +599,7 @@ footer p a:hover{
     
     section.principais_servicos article.Designers{
         position: absolute;
-        top: 64%;
+        top: 860px;
         left: 50%;
     
         transform: translate(-50%, -50%);
