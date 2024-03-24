@@ -514,6 +514,7 @@ footer p a:hover{
 
 
     nav ul {
+        width: 100vw;
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -522,19 +523,38 @@ footer p a:hover{
     }
 
     nav ul li {
+        text-align: justify;
         margin-left: 10px;
+        position: relative;
     }
 
-    nav ul li:first-child {
-        /*Primeiro elemento da lista*/
-        margin-left: 0px;
+    nav ul li:first-child{
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
-    nav ul li:last-child {
-        /*ultimo elemento da lista*/
-        margin-right: 23vh;
+    nav ul li:nth-child(2){
+        position: absolute;
+        top: 25%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+    }
+
+    nav ul li:nth-child(3){
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     
+    nav ul li:last-child{
+        position: absolute;
+        top: 65%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
 
     nav ul li a {
         color: var(--preto);
