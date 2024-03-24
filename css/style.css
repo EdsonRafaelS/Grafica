@@ -608,8 +608,8 @@ footer p a:hover{
     section.Servicos article {
         position: relative;
         display: flex;
-        width: 300vw;
-        height: 500px;
+        width: 100%;
+        height: 590px;
         background-color: var(--marrom);
         color: var(--branco);
         font-family: var(--font-regular);
@@ -618,7 +618,7 @@ footer p a:hover{
     section.Servicos article .servicos-lista {
         position: absolute;
         top: 50%;
-        left: 25%;
+        left: 50%;
         transform: translate(-50%, -50%);
     
         list-style-type: '\2660\0020\0020\0020';
@@ -626,8 +626,8 @@ footer p a:hover{
         margin: 0;
         column-count: 1; /* Dividindo em duas colunas */
         column-gap: 20px; /* Espaço entre as colunas (opcional) */
-    
         font-size: 20px;
+        white-space: normal;
     }    
 
     section.Carrossel-container {
