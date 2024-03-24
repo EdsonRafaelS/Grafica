@@ -524,26 +524,5 @@ footer p a:hover{
         margin-right: 30vw;
     }
 
-    section.title{
-        height: 700px;
-        width: 98vw;
-    }
-
-    section article.conteudo{
-        top: 30%;
-    }
-
-    section article.conteudo h1{
-        font-size: 3.5em;
-    }
-
-    section article.conteudo p{
-        font-size: 1.3em;
-    }
-
-    section.introducao{
-        height: 700px;
-    }
-
 
 }
