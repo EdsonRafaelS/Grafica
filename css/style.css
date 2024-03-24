@@ -102,6 +102,7 @@ nav ul li:last-child {
     margin-right: 23vh;
 }
 
+
 nav ul li a {
     color: var(--preto);
     opacity: 60%;
@@ -496,6 +497,61 @@ footer p a:hover{
         flex-direction: column;
     }
 
+    header{
+            flex-direction: row;       
+    }
+       
+    header picture {
+        padding-left: 30px;
+    }
+
+    .logo img {
+        width: 70px;
+        /* Defina a largura desejada da imagem */
+        height: auto;
+        /* Mantém a proporção da imagem */
+    }
+
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        /*Posiciona os elementos da lista, um ao lado do outro*/
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    nav ul li:first-child {
+        /*Primeiro elemento da lista*/
+        margin-left: 0px;
+    }
+
+    nav ul li:last-child {
+        /*ultimo elemento da lista*/
+        margin-right: 23vh;
+    }
+    
+
+    nav ul li a {
+        color: var(--preto);
+        opacity: 60%;
+        text-decoration: none;
+        padding: 5px;
+        transition: 0.1s;
+        font-family: var(--font-regular);
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        color: var(--preto);
+        opacity: 100%;
+    }
+
     section.title article.conteudo h1{
         font-size: 34px;
         text-align: center;
@@ -683,6 +739,7 @@ footer p a:hover{
 
     
     section.Contato{
+        
         position: relative;
         width: 100vw;
         height: 650px;
@@ -783,9 +840,4 @@ footer p a:hover{
         color: var(--branco);
     }
 
-    
-
-    .column-list{
-        display: none;
-    }
 }
