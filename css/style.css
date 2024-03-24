@@ -681,6 +681,33 @@ footer p a:hover{
         margin-right: 0px;
     }
 
+    
+    section.Contato{
+        position: relative;
+        width: 100vw;
+        height: 650px;
+        background-color: var(--branco);
+        color: var(--preto);
+    }
+
+    section.Contato article h2{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: var(--font-regular);
+        font-size: 2.5em;
+    }
+
+    section.Contato article p#orçamento{
+        position: absolute;
+        text-align: center;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.4em;
+    }
+
     section.Contato article.Telefones {
         position: absolute;
         left: 50%;
@@ -691,7 +718,7 @@ footer p a:hover{
     section.Contato article.Telefones button{
         position: relative;
         width: 200px;
-        height: 40px;
+        height: 60px;
         margin: 20px;
     }
     
@@ -703,7 +730,6 @@ footer p a:hover{
     }
 
     section.Contato article.Telefones button{
-        
         border-radius: 50px;
         background-color: var(--cor3);
         color: var(--marrom);
@@ -717,7 +743,7 @@ footer p a:hover{
     
     section.Contato article.Telefones button:hover{
         background-color: var(--cor3-1  );
-        width: 180px;
+        width: 200px;
         height: 60px;
     }   
     
@@ -730,6 +756,33 @@ footer p a:hover{
         font-size: 1.2em; /* Ajusta o tamanho do ícone (aumentado para 1.5 vezes o tamanho padrão) */
         margin-right: 10px; /* Adiciona um espaço entre o ícone e o texto */
     }
+        
+    footer{
+        position: relative;
+        width: 100vw;
+        height: 36px;
+        font-size: 15px;
+        font-family: var(--font-regular);
+        background-color: var(--marrom);
+        color: var(--branco);
+    }
+
+    footer p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    footer p a{
+        color: var(--cor4);
+        text-decoration: none;
+    }
+
+    footer p a:hover{
+        color: var(--branco);
+    }
+
     
 
     .column-list{
