@@ -518,6 +518,40 @@ footer p a:hover{
         transform: translate(-50%, -50%);
     }
 
+    section.introducao{
+        height: 900px;
+        position: relative;
+    }
+    
+    section.introducao article.introd01{
+        top: 25%;
+    }
+
+    section.introducao article.introd01 h2{
+        font-size: 30px;
+    }
+
+    section.introducao article.introd02{
+        top: 65%;
+    }
+
+    section.introducao article.introd02 p{
+        font-size: 23px;
+        top: 100%;
+    }
+
+    section.introducao button {
+        position: relative;
+        top: 80%;
+    }
+
+    section.introducao button.introducao p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
 
     .column-list{
         display: none;
