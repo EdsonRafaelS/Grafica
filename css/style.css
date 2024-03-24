@@ -491,8 +491,75 @@ footer p a:hover{
     color: var(--branco);
 }
 
-/* Para telas de até 762px */
-/* Para telas de até 762px */
-@media screen and (max-width: 762px) {
+@media (max-width : 576px){
+    *{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        width: 100%;
+        height: 85px;
+    }
+
+    header picture{
+        padding-left: 0;
+    }
+
+    .logo img{
+        width: 75px;
+        height: auto;
+    }
+
+    nav ul li{
+        margin-left: 10px;
+    }
+
+    nav ul li:first-child{
+        margin-left: 70px;
+    }
+
+    nav ul li:last-child{
+        margin-right: 30vw;
+    }
+
+    section.title{
+        height: 700px;
+        width: 98vw;
+    }
+
+    section article.conteudo{
+        top: 30%;
+    }
+
+    section article.conteudo h1{
+        font-size: 3.5em;
+    }
+
+    section article.conteudo p{
+        font-size: 1.3em;
+        margin-left: 40px;
+        text-align: justify;
+        margin-right: 40px;
+        margin-top: 30px;
+    }
+
+    section.introducao{
+        height: 700px;
+    }
+
+    section.introducao article{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    section.principais_servicos{
+        height: 1000px;
+    }
+
+    footer{
+        width: 98vw;
+    }
 
 }
