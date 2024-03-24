@@ -729,16 +729,16 @@ footer p a:hover{
         justify-content: center; /* Centraliza horizontalmente */
         align-items: center; /* Centraliza verticalmente */
         width: 100%;
-        height: auto; /* Altura automática para ajustar ao conteúdo */
-        overflow: hidden; /* Para garantir que imagens maiores sejam cortadas */
+        height: calc(100% - 40px); /* Ajusta a altura para excluir o espaço ocupado pelo título */
+        margin-top: 40px; /* Garante que o espaço do título seja considerado */
     }
     
     section.Carrossel-container article.imagens img {
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
-        vertical-align: middle; /* Alinhar verticalmente no centro */
-    }    
+        margin: auto; /* Centraliza horizontalmente */
+    }
 
     section.Carrossel-container button{
         position: absolute;
@@ -750,7 +750,7 @@ footer p a:hover{
     }
     
     section.Carrossel-container button.prev {
-        margin-left: 0px;
+        margin-left: 10px;
     }
       
       section.Carrossel-container button.next {
