@@ -630,6 +630,59 @@ footer p a:hover{
         font-size: 20px;
     }    
 
+    section.Carrossel-container {
+        position: relative;
+        width: 370px;
+        height: 650px;
+        overflow: hidden;
+    }
+    
+    section.Carrossel-container h1 {
+        position: absolute;
+        font-family: var(--font-regular);
+        font-size: 30px;
+        white-space: nowrap;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: var(--branco);
+    }
+    
+    section.Carrossel-container article.imagens {
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        width: 100%;
+        height: calc(100% - 40px); /* Ajusta a altura para excluir o espaço ocupado pelo título */
+        margin-top: 40px; /* Garante que o espaço do título seja considerado */
+    }
+    
+    section.Carrossel-container article.imagens img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        margin: auto; /* Centraliza horizontalmente */
+    }
+
+    section.Carrossel-container button{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        cursor: pointer;
+        padding: 20px;
+    }
+    
+    section.Carrossel-container button.prev {
+        margin-left: 30px;
+    }
+      
+      section.Carrossel-container button.next {
+        margin-right: 30px;
+    }
+
+    
+
     .column-list{
         display: none;
     }
