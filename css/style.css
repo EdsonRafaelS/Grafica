@@ -709,16 +709,16 @@ footer p a:hover{
         justify-content: center; /* Centraliza horizontalmente */
         align-items: center; /* Centraliza verticalmente */
         width: 100%;
-        height: calc(100% - 40px); /* Ajusta a altura para excluir o espaço ocupado pelo título */
-        margin-top: 40px; /* Garante que o espaço do título seja considerado */
+        height: auto; /* Altura automática para ajustar ao conteúdo */
+        overflow: hidden; /* Para garantir que imagens maiores sejam cortadas */
     }
     
     section.Carrossel-container article.imagens img {
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
-        margin: auto; /* Centraliza horizontalmente */
-    }
+        vertical-align: middle; /* Alinhar verticalmente no centro */
+    }    
 
     section.Carrossel-container button{
         position: absolute;
