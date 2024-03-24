@@ -553,13 +553,56 @@ footer p a:hover{
         transform: translate(-50%, -50%);
     }
 
+    section.principais_servicos{
+        height: 1500px;
+    }
+
+    section.principais_servicos h3{
+        text-align: center;
+    }
+
     section.principais_servicos article h2{
+        top: 40px;
         font-size: 34px;
         white-space: nowrap;
     }
 
-    div.Principais_servicos article{
-        display: block;
+    section.principais_servicos article img{
+        width: 100px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
+    
+    section.principais_servicos article.Sublimacao{
+        position: absolute;
+        top: 13%;
+        left: 50%;
+    
+        transform: translate(-50%, -50%);
+    }
+    
+    section.principais_servicos article.Personalizacao{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+    
+        transform: translate(-50%, -50%);
+    }
+    
+    section.principais_servicos article.Artes{
+        position: absolute;
+        top: 47%;
+        left: 50%;
+    
+        transform: translate(-50%, -50%);
+    }
+    
+    section.principais_servicos article.Designers{
+        position: absolute;
+        top: 64%;
+        left: 50%;
+    
+        transform: translate(-50%, -50%);
     }
 
     .column-list{
