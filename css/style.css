@@ -399,6 +399,13 @@ section.Carrossel-container button.prev {
     margin-right: 30px;
 }
 
+section.Carrossel-container button.Designe{
+    height: 50px;
+    left: 50%;
+    top:96%;
+    transform: translate(-50% , -50%);
+}
+
 section.Contato{
     position: relative;
     width: 100vw;
@@ -755,6 +762,13 @@ footer p a:hover{
       
       section.Carrossel-container button.next {
         margin-right: 0px;
+    }
+
+    section.Carrossel-container button.Designe{
+        height: 60px;
+        left: 50%;
+        top:90%;
+        transform: translate(-50% , -50%);
     }
 
     
