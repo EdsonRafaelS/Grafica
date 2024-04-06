@@ -207,6 +207,9 @@
                 <button class="tel4" onclick="enviarWhatsApp4()"><i class="fab fa-whatsapp"></i>
                     <p>WhatsApp 4</p>
                 </button>
+                <button class="tel5" onclick="enviarWhatsApp5()"><i class="fab fa-whatsapp"></i>
+                    <p>WhatsApp 5</p>
+                </button>
             </article>
         </section>
 
@@ -258,6 +261,13 @@
 
         function enviarWhatsApp4() {
             var numeroTelefone = '558994512017'; // Substitua pelo número de telefone desejado
+            var mensagem = encodeURIComponent('Olá! Visitei o seu site e estou interessado em contratar os seus serviços. Gostaria de obter mais informações sobre os seus produtos. Obrigado!'); // Substitua 'Sua mensagem aqui' pela mensagem desejada
+            var url = 'https://wa.me/' + numeroTelefone + '?text=' + mensagem;
+            window.open(url);
+        }
+
+        function enviarWhatsApp5() {
+            var numeroTelefone = '558994630083'; // Substitua pelo número de telefone desejado
             var mensagem = encodeURIComponent('Olá! Visitei o seu site e estou interessado em contratar os seus serviços. Gostaria de obter mais informações sobre os seus produtos. Obrigado!'); // Substitua 'Sua mensagem aqui' pela mensagem desejada
             var url = 'https://wa.me/' + numeroTelefone + '?text=' + mensagem;
             window.open(url);
